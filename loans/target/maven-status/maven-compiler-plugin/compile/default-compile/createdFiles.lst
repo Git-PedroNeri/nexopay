@@ -1,0 +1,17 @@
+com/nexopay/loans/audit/AuditAwareImpl.class
+com/nexopay/loans/dto/ErrorResponseDto.class
+com/nexopay/loans/dto/LoansDto.class
+com/nexopay/loans/entity/BaseEntity.class
+com/nexopay/loans/repository/LoansRepository.class
+com/nexopay/loans/dto/LoansContactInfoDto.class
+com/nexopay/loans/LoansApplication.class
+com/nexopay/loans/exception/LoanAlreadyExistsException.class
+com/nexopay/loans/service/impl/LoansServiceImpl.class
+com/nexopay/loans/dto/ResponseDto.class
+com/nexopay/loans/service/ILoansService.class
+com/nexopay/loans/constants/LoansConstants.class
+com/nexopay/loans/controller/LoansController.class
+com/nexopay/loans/exception/ResourceNotFoundException.class
+com/nexopay/loans/entity/Loans.class
+com/nexopay/loans/exception/GlobalExceptionHandler.class
+com/nexopay/loans/mapper/LoansMapper.class

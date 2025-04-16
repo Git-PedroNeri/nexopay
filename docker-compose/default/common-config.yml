@@ -17,5 +17,6 @@ services:
     extends:
       service: microservice-base-config
     environment:
+      GIT_ACCESS_TOKEN: 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
       SPRING_PROFILES_ACTIVE: default
       SPRING_CONFIG_IMPORT: configserver:http://configserver:8071/

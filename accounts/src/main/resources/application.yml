@@ -4,6 +4,7 @@ spring:
   application:
     name: "accounts"
   profiles:
+    #    p prod aqui é overwrite utilizando program arguments
     active: "prod"
   datasource:
     url: jdbc:h2:mem:testdb

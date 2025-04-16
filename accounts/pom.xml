@@ -117,7 +117,7 @@
                 <version>3.4.2</version>
                 <configuration>
                     <to>
-                        <image>nexopay/${project.artifactId}:s6</image>
+                        <image>ppneri/${project.artifactId}:s1</image>
                     </to>
                 </configuration>
             </plugin>

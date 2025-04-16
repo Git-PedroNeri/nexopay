@@ -9,15 +9,15 @@ spring:
       server:
         #        native:
         #          search-locations: "classpath:/config"
-        #           search-locations: "file:///Users//nexopay//Documents//config"
+        #           search-locations: "file:///Users//ppneri//Documents//config"
         git:
           uri: "https://github.com/Git-PedroNeri/config-server_nexopay.git"
           default-label: main
           timeout: 5
           clone-on-start: true
           force-pull: true
-          password: ${GIT_ACCESS_TOKEN}
-          username: ${GIT_USERNAME}
+          password: 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
+          username: Git-PedroNeri
   rabbitmq:
     host: "localhost"
     port: 5672
@@ -29,16 +29,16 @@ management:
     web:
       exposure:
         include: "*"
-#  health:
-#    readiness-state:
-#      enabled: true
-#    liveness-state:
-#      enabled: true
-#  endpoint:
-#    health:
-#      probes:
-#        enabled: true
-#
+  health:
+    readiness-state:
+      enabled: true
+    liveness-state:
+      enabled: true
+  endpoint:
+    health:
+      probes:
+        enabled: true
+
 encrypt:
   key: "45D81EC1EF61DF9AD8D3E5BB397F9"
 
