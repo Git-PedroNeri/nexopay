@@ -25,7 +25,8 @@ hs_err_pid*
 bin/
 tmp/
 target/
-*/target/*
+**/target/*
+**/target/*/**
 .factorypath
 
 # IntelliJ
