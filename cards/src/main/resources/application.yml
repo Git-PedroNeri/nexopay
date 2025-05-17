@@ -4,12 +4,12 @@ spring:
   application:
     name: "cards"
   profiles:
-    active: "qa"
+    active: "prod"
   sql:
     init:
       mode: always
   datasource:
-    url: jdbc:mysql://localhost:3308/cardsdb?createDatabaseIfNotExist=true
+    url: jdbc:mysql://localhost:3306/cardsdb?createDatabaseIfNotExist=true
     username: root
     password: user@root
     jpa:

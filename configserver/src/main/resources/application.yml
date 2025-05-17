@@ -2,21 +2,17 @@ spring:
   application:
     name: "configserver"
   profiles:
-    #    active: native
     active: git
   cloud:
     config:
       server:
-        #        native:
-        #          search-locations: "classpath:/config"
-        #           search-locations: "file:///Users//ppneri//Documents//config"
         git:
           uri: "https://github.com/Git-PedroNeri/config-server_nexopay.git"
           default-label: main
           timeout: 5
           clone-on-start: true
           force-pull: true
-          password: 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
+          password: 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
           username: Git-PedroNeri
 
 management:
