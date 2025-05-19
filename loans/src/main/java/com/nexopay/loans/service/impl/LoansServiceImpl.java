@@ -1,6 +1,7 @@
 package com.nexopay.loans.service.impl;
 
 import com.nexopay.loans.constants.LoansConstants;
+import com.nexopay.loans.controller.LoansController;
 import com.nexopay.loans.dto.LoansDto;
 import com.nexopay.loans.entity.Loans;
 import com.nexopay.loans.exception.LoanAlreadyExistsException;
@@ -9,6 +10,8 @@ import com.nexopay.loans.mapper.LoansMapper;
 import com.nexopay.loans.repository.LoansRepository;
 import com.nexopay.loans.service.ILoansService;
 import lombok.AllArgsConstructor;
+import org.slf4j.Logger;
+import org.slf4j.LoggerFactory;
 import org.springframework.stereotype.Service;
 
 import java.util.Optional;
@@ -17,6 +20,8 @@ import java.util.Random;
 @Service
 @AllArgsConstructor
 public class LoansServiceImpl implements ILoansService {
+
+    private static final Logger logger = LoggerFactory.getLogger(LoansController.class);
 
     private LoansRepository loansRepository;
 

@@ -38,6 +38,11 @@ eureka:
     serviceUrl:
       defaultZone: http://localhost:8070/eureka/
 
+logging:
+  level:
+    com:
+      nexopay:
+        cards: DEBUG
 info:
   app:
     name: "cards"

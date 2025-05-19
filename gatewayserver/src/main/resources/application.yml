@@ -31,6 +31,6 @@ info:
 logging:
   level:
     com:
-      eazybytes:
+      nexopay:
         gatewayserver: DEBUG
 
