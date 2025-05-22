@@ -7,9 +7,7 @@
         <sourceOutputDir name="target/generated-sources/annotations" />
         <sourceTestOutputDir name="target/generated-test-sources/test-annotations" />
         <outputRelativeToContentRoot value="true" />
-        <module name="eurekaserver" />
         <module name="gatewayserver" />
-        <module name="configserver" />
       </profile>
       <profile name="Annotation profile for loans" enabled="true">
         <sourceOutputDir name="target/generated-sources/annotations" />
@@ -21,9 +19,16 @@
         </processorPath>
         <module name="loans" />
         <module name="cards" />
-        <module name="accounts" />
       </profile>
     </annotationProcessing>
+    <bytecodeTargetLevel>
+      <module name="accounts" target="21" />
+      <module name="cards" target="21" />
+      <module name="configserver" target="21" />
+      <module name="eurekaserver" target="21" />
+      <module name="gatewayserver" target="21" />
+      <module name="loans" target="21" />
+    </bytecodeTargetLevel>
   </component>
   <component name="JavacSettings">
     <option name="ADDITIONAL_OPTIONS_OVERRIDE">

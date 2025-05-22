@@ -12,7 +12,7 @@ spring:
           timeout: 5
           clone-on-start: true
           force-pull: true
-          password: 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
+          password: ${GIT_TOKEN}
           username: Git-PedroNeri
 
 management:
