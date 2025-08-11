@@ -30,7 +30,7 @@ services:
       service: microservice-db-config
 
   configserver:
-    image: "ppneri/configserver:s8"
+    image: "ppneri/configserver:s12"
     platform: linux/amd64
     container_name: configserver-ms
     ports:
@@ -46,7 +46,7 @@ services:
       service: microservice-base-config
 
   eurekaserver:
-    image: "ppneri/eurekaserver:s8"
+    image: "ppneri/eurekaserver:s12"
     platform: linux/amd64
     container_name: eurekaserver-ms
     ports:
@@ -67,7 +67,7 @@ services:
       SPRING_APPLICATION_NAME: "eurekaserver"
 
   accounts:
-    image: "ppneri/accounts:s8"
+    image: "ppneri/accounts:s12"
     platform: linux/amd64
     container_name: accounts-ms
     ports:
@@ -87,7 +87,7 @@ services:
       service: microservice-eureka-config
 
   loans:
-    image: "ppneri/loans:s8"
+    image: "ppneri/loans:s12"
     platform: linux/amd64
     container_name: loans-ms
     ports:
@@ -107,7 +107,7 @@ services:
       service: microservice-eureka-config
 
   loans1:
-    image: "ppneri/loans:s8"
+    image: "ppneri/loans:s12"
     platform: linux/amd64
     container_name: loans-ms1
     ports:
@@ -127,7 +127,7 @@ services:
       service: microservice-eureka-config
 
   cards:
-    image: "ppneri/cards:s8"
+    image: "ppneri/cards:s12"
     platform: linux/amd64
     container_name: cards-ms
     ports:

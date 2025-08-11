@@ -78,5 +78,4 @@ public class GatewayserverApplication {
                         .defaultIfEmpty("anonymous");
     }
 
-
 }
