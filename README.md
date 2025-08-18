@@ -178,28 +178,21 @@ Learn how to create enterprise and production ready Microservices with Spring, S
 
 # 1) Entrar no container e logar no admin via kcadm
 
-docker exec -it keycloak /opt/keycloak/bin/kcadm.sh config credentials \
---server http://127.0.0.1:8080 \
---realm master \
---user admin \
---password admin
+```docker exec -it keycloak /opt/keycloak/bin/kcadm.sh config credentials --server http://127.0.0.1:8080 --realm master --user admin --password admin```
 
 # 2) Desativar exigência de SSL no realm
 
-docker exec -it keycloak /opt/keycloak/bin/kcadm.sh update realms/master \
--s sslRequired=NONE
+```docker exec -it keycloak /opt/keycloak/bin/kcadm.sh update realms/master -s sslRequired=NONE```
 
 # 3a) Remover frontendUrl
 
-docker exec -it keycloak /opt/keycloak/bin/kcadm.sh update realms/master \
--s 'attributes.frontendUrl='
+```docker exec -it keycloak /opt/keycloak/bin/kcadm.sh update realms/master -s 'attributes.frontendUrl='```
 
 # --- ou ---
 
 # 3b) Forçar frontendUrl para HTTP
 
-docker exec -it keycloak /opt/keycloak/bin/kcadm.sh update realms/master \
--s 'attributes.frontendUrl="http://localhost:7080"'
+```docker exec -it keycloak /opt/keycloak/bin/kcadm.sh update realms/master -s 'attributes.frontendUrl="http://localhost:7080"'```
 
 # 4) Reiniciar o Keycloak
 
