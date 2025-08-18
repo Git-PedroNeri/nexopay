@@ -198,7 +198,7 @@ Learn how to create enterprise and production ready Microservices with Spring, S
 
 docker restart keycloak
 
-# 5) Testar se as URLs estão em HTTP
+# 5) Teste se as URLs estão em HTTP
 
 curl -s http://localhost:7080/realms/master/.well-known/openid-configuration \
 | grep -E '"(issuer|authorization_endpoint|token_endpoint)"'
