@@ -22,7 +22,7 @@ public class MessageFunctions {
     @Bean
     public Function<AccountsMsgDto, AccountsMsgDto> email() {
         return accountsMsgDto -> {
-            log.info("Sending email with the details : " + accountsMsgDto.toString());
+            log.info("Sending email with on details : " + accountsMsgDto.toString());
             return accountsMsgDto;
         };
     }
