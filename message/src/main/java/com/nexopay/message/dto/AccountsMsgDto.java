@@ -1,10 +1,12 @@
 package com.nexopay.message.dto;
 
 /**
- * AccountsMsgDto
+ * The type Accounts msg dto.
  *
- * @author pedroneri
- * @date 10/08/25
+ * @param accountNumber
+ * @param name
+ * @param email
+ * @param mobileNumber
  */
-public record AccountsMsgDto(Long accountNumber, String name, String email, String mobileNumber) {
+public record AccountsMsgDto(Long accountNumber, String name, String email, String mobileNumber, Long id) {
 }
